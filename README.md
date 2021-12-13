@@ -1,1 +1,2 @@
-# Object_Oriented_Programming-OOP-
+# Bắt đầu học OOP 
+thời gian: 13/12/2021
