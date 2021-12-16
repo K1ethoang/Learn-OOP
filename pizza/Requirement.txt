@@ -1,0 +1,20 @@
+- Make a pizza
+    Name
+    Dough
+    Sauce
+    Toppings
+        Mushrooms
+        Onions
+        Bacons
+    
+- Pizza types
+    Cheese
+    Greek
+    Pepperoni
+
+- Processes
+    Select type
+    Prepare
+    Bake
+    Cut
+    Box

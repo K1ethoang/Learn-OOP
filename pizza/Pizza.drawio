@@ -1,0 +1,81 @@
+<mxfile host="65bd71144e">
+    <diagram id="C5RBs43oDa-KdzZeNtuy" name="Pizza">
+        <mxGraphModel dx="734" dy="430" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="GsnTy1pwf4hrvbubyMJd-0" value="Pizza" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="298" y="58" width="160" height="163" as="geometry">
+                        <mxRectangle x="164" y="138" width="57" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="GsnTy1pwf4hrvbubyMJd-1" value="+ name: string&#10;+ dough: Dough&#10;+ sauce: Sauce&#10;+ topping: array &lt;topping&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="GsnTy1pwf4hrvbubyMJd-0" vertex="1">
+                    <mxGeometry y="26" width="160" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="GsnTy1pwf4hrvbubyMJd-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="GsnTy1pwf4hrvbubyMJd-0" vertex="1">
+                    <mxGeometry y="90" width="160" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="GsnTy1pwf4hrvbubyMJd-3" value="+ prepare(): void&#10;+ bake(): void&#10;+ cut(): void&#10;+ box(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="GsnTy1pwf4hrvbubyMJd-0" vertex="1">
+                    <mxGeometry y="98" width="160" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-1" value="Dough" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="536" y="53" width="79" height="69" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-3" value="thin&#10;thick" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="n3O-XSib5TF_ltBe8rav-1" vertex="1">
+                    <mxGeometry y="26" width="79" height="43" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-10" value="Sauce" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="535.75" y="148" width="79.5" height="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-11" value="Chilli&#10;pepper&#10;tomato" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="n3O-XSib5TF_ltBe8rav-10" vertex="1">
+                    <mxGeometry y="26" width="79.5" height="58" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-12" value="Topping" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="669" y="94" width="79.5" height="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-13" value="Mushrooms&#10;Onions&#10;Bacon" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="n3O-XSib5TF_ltBe8rav-12" vertex="1">
+                    <mxGeometry y="26" width="79.5" height="58" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-14" value="CheesePizza" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="90" y="321" width="152" height="61" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-16" value="GreekPizza" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="308" y="368" width="152" height="61" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-17" value="PepperoniPizza" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="514" y="321" width="152" height="61" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-18" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="n3O-XSib5TF_ltBe8rav-14" target="GsnTy1pwf4hrvbubyMJd-3" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="442" y="278" as="sourcePoint"/>
+                        <mxPoint x="602" y="278" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-19" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.506;entryY=0.938;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="n3O-XSib5TF_ltBe8rav-16" target="GsnTy1pwf4hrvbubyMJd-3" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="176" y="331" as="sourcePoint"/>
+                        <mxPoint x="384" y="217" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-20" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="n3O-XSib5TF_ltBe8rav-17" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="313" y="350.02" as="sourcePoint"/>
+                        <mxPoint x="378" y="221" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="378" y="221"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-21" value="PizzaStore" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="44" y="77" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="n3O-XSib5TF_ltBe8rav-21" vertex="1">
+                    <mxGeometry y="26" width="160" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3O-XSib5TF_ltBe8rav-24" value="+ orderPizza(string): Pizza" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="n3O-XSib5TF_ltBe8rav-21" vertex="1">
+                    <mxGeometry y="34" width="160" height="26" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

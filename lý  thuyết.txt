@@ -1,0 +1,21 @@
+1. tính đóng gói
+- access modifier:
+    + private
+    + public
+    + protected
+
+2. tính kế thừa
+cú pháp:
+class <tên class con> : < access modifier> <tên class cha>
+nếu không chỉ rõ access modifier thì mặc định là private
+
+- các phạm vi kế thừa:
+
+        + public: Nếu kế thừa ở dạng này, sau khi kế thừa, tất cả các thành viên dạng public lớp cha sẽ public ở 
+lớp con, dạng protected ở lớp cha vẫn sẽ là protected ở lớp con.
+
+        + protected: Nếu dùng protected thì sau khi kế thừa, tất cả các thành viên dạng public lớp cha sẽ trở 
+thành protected tại lớp con.
+
+        + private: Trường hợp ta sử dụng private, thì sau khi kế thừa, tất cả các thành viên dạng public và 
+protected ở lớp cha sẽ thành private tại lớp con.

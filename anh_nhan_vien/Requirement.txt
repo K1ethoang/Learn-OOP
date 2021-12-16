@@ -1,0 +1,12 @@
+Nhân viên sửa ống nước
+Nhân viên giao hàng
+Nhân viên xe ôm 4.0
+
+1. Hãy phân tích và mô tả cách thông tin cần thiết đẻ quản lí 3 nhân viên trên
+2. Tính tiền lương hàng tháng của 3 nhân viên trên
+- sửa ống nươc: số giờ sửa * 50000
+- giao hàng: số hàng giao * 33.500
+- xe ôm: số km * 10000
+3. Viết 1 ứng dụng quản lí các nhân viên đã đề cập
+4. Tính tổng tiền lương hàng tháng của các nhân viên
+5. Thống kê các nhân viên giảm dần theo lương
