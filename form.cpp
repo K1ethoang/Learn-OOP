@@ -59,12 +59,13 @@ void Student::outputInformation()
 
 int main()
 {
-    Student s1; // đối tượng giá trị (Java, C# không có)
+    Student sv; // đối tượng giá trị (Java, C# không có) -> chỉ có ở C++
+    sv.inputInformation();
+    sv.outputInformation();
 
-    cout << "\n\t\tNHAP THONG TIN SINH VIEN\n";
-    s1.inputInformation();
-    s1.setCode("123");
-    cout << "\n\t\tTHONG TIN SINH VIEN\n";
-    s1.outputInformation();
+    Student *sv1 = new Student; // đối tượng con trỏ (Java, C# chỉ có thằng này)
+    cout << sv1->getCode();
+
+    delete sv1;
     return 0;
 }
