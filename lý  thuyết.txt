@@ -1,13 +1,15 @@
 1. tính đóng gói
-- access modifier:
-    + private
-    + public
-    + protected
+- access specifier:
+    + private: Thành phần có thuộc tính này sẽ chỉ được truy cập từ bên trong lớp.
+Bên ngoài lớp hay trong lớp dẫn xuất sẽ không thể truy cập được.
+    + public: Không hạn chế. Thành phần có thuộc tính này có thể được truy cập ở bất kì vị trí nào.
+    + protected: Mở rộng hơn private một chút. Thành phần có thuộc tính này sẽ có thể truy cập ở trong nội bộ lớp 
+và trong lớp dẫn xuất ( lớp dẫn xuất sẽ được trình bày trong bài Tính Kế Thừa ) chỉ có thể truy cập bởi lớp dẫn xuất
 
 2. tính kế thừa
 cú pháp:
-class <tên class con> : < access modifier> <tên class cha>
-nếu không chỉ rõ access modifier thì mặc định là private
+class <tên class con> : < access specifier> <tên class cha>
+nếu không chỉ rõ access specifier thì mặc định là private
 
 - các phạm vi kế thừa:
 

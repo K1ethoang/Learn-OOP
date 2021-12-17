@@ -1,0 +1,15 @@
+Một điểm dịch vụ du lịch cần quản lí các thông tin cho thuê xe đạp và xe máy
+- Với xe đạp cần lưu họ tên người thuê, số giờ thuê, tiền xe đạp được tính
+như sau: 10000 (đồng) cho giờ đầu tiên; 8000 cho mỗi giờ tiếp theo
+- Với mỗi xe máy cần lưu họ tên người thuê, số giờ thuê, loại xe (100 phân
+khối, 250 phân khối), biển số. Tiền thuê xe máy được tính như sau:
+    Đối với giờ đầu tiên, loại xe 100 phân khối tính 150000
+                          loại xe 250 phân khối tính 200000
+    Đối với những giờ tiếp theo tính 100000 cho cả 2 loại xe máy
+
+Viết chương tình xây dựng các lớp cần thiết sau đó nhập danh sách các thông 
+tin thuê - xe đạp và xe máy, sau đó xuất ra các thông tin sau:
++ Xuất tất cả các thông tin thuê xe (cả số tiền thuê tương ứng)
++ Tính tổng số tiền thuê xe đạp và xe máy
++ Xuất tất cả các thông tin liên quan đến việc thuê xe đạp
++ Tính tổng số tiền cho thuê xe máy loại 250 phân khối

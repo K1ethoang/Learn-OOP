@@ -29,5 +29,6 @@
     "numeric": "cpp",
     "ostream": "cpp",
     "streambuf": "cpp"
-  }
+  },
+  "C_Cpp.errorSquiggles": "Disabled"
 }
