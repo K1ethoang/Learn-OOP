@@ -1,15 +1,18 @@
 1. tính đóng gói
-- access specifier:
+- access modifier:
     + private: Thành phần có thuộc tính này sẽ chỉ được truy cập từ bên trong lớp cơ sở.
 Bên ngoài lớp hay trong lớp dẫn xuất sẽ không thể truy cập được.
     + public: Không hạn chế. Thành phần có thuộc tính này có thể được truy cập ở bất kì vị trí nào.
     + protected: Mở rộng hơn private một chút. Thành phần có thuộc tính này sẽ có thể truy cập ở trong nội bộ lớp 
-và trong lớp dẫn xuất ( lớp dẫn xuất sẽ được trình bày trong bài Tính Kế Thừa ) chỉ có thể truy cập bởi lớp dẫn xuất
+và trong lớp dẫn xuất ( lớp dẫn xuất sẽ được trình bày trong bài Tính Kế Thừa ) chỉ có thể truy cập bởi lớp 
+dẫn xuất
+
+- Nếu ko chỉ rõ access modifier -> mặc định là public
 
 2. tính kế thừa
 cú pháp:
-class <tên class con> : < access specifier> <tên class cha>
-nếu không chỉ rõ access specifier thì mặc định là private
+class <tên class con> : < access modifier> <tên class cha>
+nếu không chỉ rõ access modifier thì mặc định là private
 
 - các phạm vi kế thừa:
 
@@ -27,5 +30,43 @@ protected ở lớp cha sẽ thành private tại lớp con.
         + Đa kế thừa: chỉ có tở C++ bên Java & C# không có 
 
 3. Tính đa hình
-- Overiding: định nghĩa lại 1 hàm ở lớp cơ sở 
-- Overloading: các hàm có tên giồng nhau nhưng khác tham số hoặc kiểu dữ liệu trả về
+
+- từ khoá "virtual": gọi đến những hàm được overriding ở lớp dẫn xuất
+- Overriding (ghi đè): định nghĩa lại phương thức ở lớp cơ sở
+- Overloading (nạp chồng): các hàm có tên giồng nhau nhưng khác tham số hoặc kiểu dữ liệu trả về
+
+3.1. Phương thức ảo
+- Những phương thức ở lớp cha được khai báo với từ khoá "virtual" - thì các lớp con kế
+thừa từ nó cũng sẽ cài đặt lại các phương thức trùng tên của lớp cha để cho phép các Phương
+thức của lớp con có thể nạp chồng lại được (overriding)
+- Nếu như các phương thức của lớp cha không có từ khoá "virtual" thì khi chúng ta "new" ra 
+1 đối tượng con bất kì thì nó sẽ mặc định chạy về phương thức trùng tên ở lớp cha
+---- TÁC DỤNG CỦA TỪ KHOÁ VIRTUAL ----
+- Nếu như các phương thức của lớp cha có khai báo từ khoá virtual thì khi new ra 1 đối tượng
+con nào đó bất kì thì khi đó nó sẽ chạy vào phương thức trùng tên của lớp con đó - nó cho
+chúng ta gọi lại phương thức trùng tên của lớp con
+
+---- CÚ PHÁP KHAI BÁO PHƯƠNG THỨC ẢO ----
+virtual<kiểu dữ liệu><tên phương thức>(các tham số truyền vào nếu có);
+3.2. Phương thức thuần ảo
+- Những phương thức sẽ được khai báo ở lớp cha - còn việc định nghĩa sẽ do các lớp con kế thừa 
+từ nó đảm nhận - bắt buộc
+
+---- CÚ PHÁP KHAI BÁO PHƯƠNG THỨC THUẦN ẢO ----
+virtual<kiểu dữ liệu><tên phương thức>(các tham số truyền vào nếu có)=0;
+
+LƯU Ý:
+- Nếu ở lớp cha có các khai báo phương thức thuần ảo - thì qui tắc các lớp con nào mà kế thừa lại
+từ lớp cha - thì các lớp con kế thừa từ lớp cha đó bắt buộc phải đi định nghĩa lại phương thưc 
+thuần ảo của lớp cha đó - nếu lớp con mà không định nghĩa ==> sẽ bị lỗi
+
+3.3. khi nào dùng phương thức ảo - thuần ảo?
+* ẢO:
+- Dùng khi ở lớp cha có thông tin gì để xử lí 
+
+* THUẦN ẢO:
+- Dùng khi ở lớp cha không có thông tin để xử lí
+
+TUỲ CƠ ỨNG BIẾN
+" BIẾN CÁI PHƯƠNG THỨC THUẦN ẢO -> PHƯƠNG THỨC ẢO "
+

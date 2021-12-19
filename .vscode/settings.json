@@ -66,5 +66,6 @@
     "stdexcept": "cpp",
     "typeinfo": "cpp"
   },
-  "C_Cpp.errorSquiggles": "Disabled"
+  "C_Cpp.errorSquiggles": "Enabled",
+  "C_Cpp.intelliSenseEngineFallback": "Disabled"
 }
