@@ -1,0 +1,20 @@
+================== bài tập kế thừa ====================
+- Thư viên X tiến hành đăng kí làm thẻ độc giả. Thông tin độc giả gồm:
+    + họ tên
+    + ngày làm thẻ
+    + số tháng có hiệu lực của thẻ
+- Có 2 loại độc giả: trẻ em và người lớn
+    + Độc giả trẻ em cần lưu thêm thông tin người đại diện
+    Tiền làm thẻ tính theo cthuc: số tháng có hiệu lực * 5000 VND
+    + Độc giả người lớn cần lưu thêm thông tin số CMND
+    Tiền làm thẻ tính theo cthuc: số tháng có hiệu lực * 10.000 VND
+
+
+=== Yêu cầu ===
+1. Hãy cài đặt lớp đại diện cho các loại thẻ độc giả trên để:
+    + quản lí thông tin thẻ
+    + Tính tiền làm thẻ của 1 độc giả
+2. Hãy cài đặt lớp CThuVien để quản lí danh sách các thẻ độc giả trong
+thư viện, với các chức năng sau: 
+    + Nhập, xuất danh sách các độc giả
+    + Tính tổng tiền làm thẻ

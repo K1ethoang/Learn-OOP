@@ -1,6 +1,6 @@
 1. tính đóng gói
 - access specifier:
-    + private: Thành phần có thuộc tính này sẽ chỉ được truy cập từ bên trong lớp.
+    + private: Thành phần có thuộc tính này sẽ chỉ được truy cập từ bên trong lớp cơ sở.
 Bên ngoài lớp hay trong lớp dẫn xuất sẽ không thể truy cập được.
     + public: Không hạn chế. Thành phần có thuộc tính này có thể được truy cập ở bất kì vị trí nào.
     + protected: Mở rộng hơn private một chút. Thành phần có thuộc tính này sẽ có thể truy cập ở trong nội bộ lớp 
@@ -21,3 +21,11 @@ thành protected tại lớp con.
 
         + private: Trường hợp ta sử dụng private, thì sau khi kế thừa, tất cả các thành viên dạng public và 
 protected ở lớp cha sẽ thành private tại lớp con.
+
+- có 2 loại kế thừa:
+        + Đơn kế Thừa  
+        + Đa kế thừa: chỉ có tở C++ bên Java & C# không có 
+
+3. Tính đa hình
+- Overiding: định nghĩa lại 1 hàm ở lớp cơ sở 
+- Overloading: các hàm có tên giồng nhau nhưng khác tham số hoặc kiểu dữ liệu trả về

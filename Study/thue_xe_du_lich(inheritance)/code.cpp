@@ -240,7 +240,7 @@ void menu(Bike *bikeList, int n, Motorbike *motorbikeList, int m)
 
 int main()
 {
-    Bike *bike = new Bike[100];
+    Bike *bike = new Bike[100]; // vẫn là đối tượng giá trị -> đây là tạo mảng động mà quản lí bởi con trỏ
     Motorbike *motorbike = new Motorbike[100];
     int n = 0, m = 0;
     menu(bike, n, motorbike, m);

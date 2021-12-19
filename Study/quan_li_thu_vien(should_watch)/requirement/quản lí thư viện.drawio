@@ -1,0 +1,85 @@
+<mxfile host="65bd71144e">
+    <diagram id="6yEVVn3fbgUT61WCrIyr" name="Page-1">
+        <mxGraphModel dx="974" dy="430" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-1" value="ReaderCard" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="338" y="30" width="179" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-2" value="# fullName: string&#10;# cardMakingDate: string &#10;# numberOfMonthsInEffect: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="7Ii-KDpDCaodxow-15nn-1" vertex="1">
+                    <mxGeometry y="26" width="179" height="59" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="7Ii-KDpDCaodxow-15nn-1" vertex="1">
+                    <mxGeometry y="85" width="179" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-4" value="+ input(): void&#10;+ output(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="7Ii-KDpDCaodxow-15nn-1" vertex="1">
+                    <mxGeometry y="93" width="179" height="42" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-5" value="Adult" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="583" y="261" width="218" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-6" value="- identityCard: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="7Ii-KDpDCaodxow-15nn-5" vertex="1">
+                    <mxGeometry y="26" width="218" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="7Ii-KDpDCaodxow-15nn-5" vertex="1">
+                    <mxGeometry y="52" width="218" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-8" value="+ input(): void&#10;+ output(): void&#10;+ calculatingMoneyToMakeCard(): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="7Ii-KDpDCaodxow-15nn-5" vertex="1">
+                    <mxGeometry y="60" width="218" height="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-9" value="Child" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="261" width="218" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-10" value="- fullNameOfRepresentater: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="7Ii-KDpDCaodxow-15nn-9" vertex="1">
+                    <mxGeometry y="26" width="218" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="7Ii-KDpDCaodxow-15nn-9" vertex="1">
+                    <mxGeometry y="52" width="218" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-12" value="+ input(): void&#10;+ output(): void&#10;+ calculatingMoneyToMakeCard(): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="7Ii-KDpDCaodxow-15nn-9" vertex="1">
+                    <mxGeometry y="60" width="218" height="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-14" value="LibraryC" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="307" y="418" width="241" height="137" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-15" value="+ vector &lt;Child&gt; Children&#10;+ vector &lt;Adult&gt; Adults" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="7Ii-KDpDCaodxow-15nn-14" vertex="1">
+                    <mxGeometry y="26" width="241" height="39" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="7Ii-KDpDCaodxow-15nn-14" vertex="1">
+                    <mxGeometry y="65" width="241" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-17" value="+ input(): void&#10;+ output(): void&#10;+ calculatingMoneyToMakeCard(): long int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="7Ii-KDpDCaodxow-15nn-14" vertex="1">
+                    <mxGeometry y="73" width="241" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-19" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="7Ii-KDpDCaodxow-15nn-9" target="7Ii-KDpDCaodxow-15nn-4" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="319" y="266" as="sourcePoint"/>
+                        <mxPoint x="429" y="203" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-20" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.537;exitY=-0.003;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="7Ii-KDpDCaodxow-15nn-5" target="7Ii-KDpDCaodxow-15nn-4" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="238" y="272" as="sourcePoint"/>
+                        <mxPoint x="451" y="233" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-21" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="7Ii-KDpDCaodxow-15nn-17" target="7Ii-KDpDCaodxow-15nn-12" edge="1">
+                    <mxGeometry x="-1" y="3" relative="1" as="geometry">
+                        <mxPoint x="332" y="323" as="sourcePoint"/>
+                        <mxPoint x="172" y="441" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="143" y="523"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7Ii-KDpDCaodxow-15nn-24" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;entryX=0.555;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="7Ii-KDpDCaodxow-15nn-17" target="7Ii-KDpDCaodxow-15nn-8" edge="1">
+                    <mxGeometry x="-1" y="3" relative="1" as="geometry">
+                        <mxPoint x="598" y="507" as="sourcePoint"/>
+                        <mxPoint x="758" y="507" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
