@@ -1,2 +1,2 @@
-# Bắt đầu học OOP 
+# OOP 
 thời gian: 13/12/2021
