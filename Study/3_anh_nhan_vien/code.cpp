@@ -217,7 +217,6 @@ void sortTheListInDescendingOrderBySalary(Driver *driverList[], int l)
             swap(driverList[i], driverList[maxIndex]);
     }
 }
-
 // thiết kế menu xử lí
 void menu(Plumber *plumberList[], Deliver *deliverList[], Driver *driverList[], int n, int m, int l)
 {
@@ -323,8 +322,7 @@ void menu(Plumber *plumberList[], Deliver *deliverList[], Driver *driverList[], 
                 cout << "\nSo km chay: " << driverList[i]->getRunKilometers();
                 cout << "\nTien luong: " << (size_t)driverList[i]->salaryAmount();
             }
-            cout << "\n\n\t\tTONG TIEN LUONG: "
-                 << (size_t)sumOfSalary(driverList, l);
+            cout << "\n\n\t\tTONG TIEN LUONG: " << (size_t)sumOfSalary(driverList, l);
             system("pause");
             break;
         }
