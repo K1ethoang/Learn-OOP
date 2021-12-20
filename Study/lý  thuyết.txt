@@ -32,8 +32,8 @@ protected ở lớp cha sẽ thành private tại lớp con.
 3. Tính đa hình
 
 - từ khoá "virtual": gọi đến những hàm được overriding ở lớp dẫn xuất
-- Overriding (ghi đè): định nghĩa lại phương thức ở lớp cơ sở
-- Overloading (nạp chồng): các hàm có tên giồng nhau nhưng khác tham số hoặc kiểu dữ liệu trả về
+- Overriding (ghi đè): định nghĩa lại 1 phương thức ở lớp cơ sở
+- Overloading (nạp chồng): các phương thức có tên giồng nhau nhưng khác số lượng tham số hoặc kiểu dữ liệu tham số
 
 3.1. Phương thức ảo
 - Những phương thức ở lớp cha được khai báo với từ khoá "virtual" - thì các lớp con kế

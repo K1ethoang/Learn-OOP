@@ -1,14 +1,13 @@
+#pragma once
 #include "Child.hpp"
 #include "Adult.hpp"
-#include <iostream>
 #include <vector>
-using namespace std;
 
 class LibraryC
 {
 private:
-    vector<Child> Children;
-    vector<Adult> Adults;
+    vector<Reader *> readers; // khái báo mảng 1 chiều chứa lớp cha - vì có virtual cho nên nó sẽ
+    // đa hình sang được từng thằng con
 
 public:
     void input();
@@ -20,6 +19,8 @@ void LibraryC::input()
 {
     int choose;
     bool exit = false;
+
+    Reader *reader; // khai báo con trỏ lớp cha
     do
     {
         system("cls");
@@ -34,21 +35,19 @@ void LibraryC::input()
         switch (choose)
         {
         case 1:
-        {
-            Child child;
+            reader = new Child(); // tạo 1 đối tượng độc giả trẻ em
             cout << "\n\n\t\tNHAP THONG TIN TRE EM\n";
-            child.input();
-            Children.push_back(child);
+            reader->input();
+            reader->setIsChild(true); // set cho nó role độc giả trẻ em
+            readers.push_back(reader);
             break;
-        }
         case 2:
-        {
-            Adult adult;
+            reader = new Adult();
             cout << "\n\n\t\tNHAP THONG TIN NGUOI LON\n";
-            adult.input();
-            Adults.push_back(adult);
+            reader->input();
+            reader->setIsChild(false); // ngược lại là role độc giả người lớn
+            readers.push_back(reader);
             break;
-        }
         case 0:
             exit = true;
             break;
@@ -57,38 +56,36 @@ void LibraryC::input()
             system("pause");
             break;
         }
-
     } while (!exit);
 }
 
 void LibraryC::output()
 {
-    cout << "\n\n\t\t\t==== THONG TIN DOC GIA TRE EM ====\n";
-    for (int i = 0; i < Children.size(); i++)
+    int childCount = 1, adultCount = 1;
+    cout << "\n\n\t\t\t==== THONG TIN DOC GIA ====\n";
+    for (int i = 0; i < readers.size(); i++)
     {
-        cout << "\n\n\t\tTHONG TIN TRE EM " << i + 1 << endl;
-        Children[i].output();
-    }
-
-    cout << "\n\n\t\t\t==== THONG TIN DOC GIA NGUOI LON ====\n";
-    for (int i = 0; i < Adults.size(); i++)
-    {
-        cout << "\n\n\t\tTHONG TIN NGUOI LON " << i + 1 << endl;
-        Adults[i].output();
+        if (readers[i]->getIsChild()) // nếu là trẻ em
+        {
+            cout << "\n\n\t\tTHONG TIN DOC GIA TRE EM " << childCount << endl;
+            readers[i]->output();
+            childCount++;
+        }
+        else // nếu là người lớn
+        {
+            cout << "\n\n\t\tTHONG TIN DOC GIA NGUOI LON " << adultCount << endl;
+            readers[i]->output();
+            adultCount++;
+        }
     }
 }
 
 long LibraryC::calculatingTotalMoneyToMakeCard()
 {
     long sum = 0;
-    for (int i = 0; i < Children.size(); i++)
+    for (int i = 0; i < readers.size(); i++)
     {
-        sum += Children[i].calculatingMoneyToMakeCard();
-    }
-
-    for (int i = 0; i < Adults.size(); i++)
-    {
-        sum += Adults[i].calculatingMoneyToMakeCard();
+        sum += readers[i]->calculatingMoneyToMakeCard();
     }
 
     return sum;

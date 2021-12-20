@@ -2,12 +2,12 @@
 
 int main()
 {
-    LibraryC *obj = new LibraryC;
+    LibraryC *obj = new LibraryC();
     obj->input();
     obj->output();
-    cout << "\n\n\t\tTONG TIN LAM THE: " << obj->calculatingTotalMoneyToMakeCard();
+    cout << "\n\n\t\tTONG TIEN LAM THE: " << obj->calculatingTotalMoneyToMakeCard();
 
-    system("pause");
     delete obj;
+    system("pause");
     return 0;
 }
