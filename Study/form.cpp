@@ -1,71 +1,50 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-class Student
+class Person
 {
-    // attribute (field, property)
-private: // access modifier
-    string fullName;
-    string code;
-    float averageScore;
-    // Operation (method, function)
-public:
-    Student();  // constructor
-    ~Student(); // deconstructor
-    void inputInformation();
-    void outputInformation();
-    // GETTER and SETTER
+protected:
+    string m_name;
+    int m_age;
 
-    // get -> lấy dữ liệu
-    string getCode()
+public:
+    Person(const string &name = "", int age = 0)
+        : m_name(name), m_age(age) {}
+
+    int getAge() const
     {
-        return this->code;
+        return m_age;
     }
 
-    // set -> đặt dữ liệu
-    void setCode(string code)
+    string getName() const
     {
-        this->code = code;
+        return m_name;
     }
 };
 
-Student::Student()
+// Developer publicly inheriting Person
+class Developer : public Person
 {
-    fullName = "";
-    code = "";
-    averageScore = 0;
-}
+private:
+    float m_numberOfHoursCoding;
 
-Student::~Student()
-{
-}
+public:
+    Developer(const string &name = "", int age = 0, float numberOfHoursCoding = 0)
+        : Person{m_name, m_age}, // call Person(const std::string&, int) to initialize these fields
+          m_numberOfHoursCoding{numberOfHoursCoding}
+    {
+    }
 
-void Student::inputInformation()
-{
-    cout << "\nNhap ho ten: ";
-    getline(cin, fullName);
-    cout << "\nNhap ma sinh vien: ";
-    getline(cin, code);
-    cout << "\nNhap diem trung binh: ";
-    cin >> averageScore;
-}
-
-void Student::outputInformation()
-{
-    cout << "\nHo ten: " << fullName;
-    cout << "\nMa sinh vien: " << code;
-    cout << "\nDiem trung binh: " << averageScore;
-}
+    float getNumberOfHoursCoding() const
+    {
+        return m_numberOfHoursCoding;
+    }
+};
 
 int main()
 {
-    Student sv; // đối tượng giá trị (Java, C# không có) -> chỉ có ở C++
-    sv.inputInformation();
-    sv.outputInformation();
-
-    Student *sv1 = new Student; // đối tượng con trỏ (Java, C# chỉ có thằng này)
-    cout << sv1->getCode();
-
-    delete sv1;
+    Developer d{"kiet", 17, 20.4};
+    cout << d.getName() << " - " << d.getAge() << " - " << d.getNumberOfHoursCoding();
     return 0;
 }

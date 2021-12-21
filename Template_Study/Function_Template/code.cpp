@@ -59,5 +59,10 @@ int main()
     Point<double> point;
     cin >> point;
     cout << point;
+    cout << "\n\n\t\tswap" << endl;
+
+    swap_<double>(point.x, point.y);
+    cout << point;
+
     return 0;
 }

@@ -1,0 +1,25 @@
+Cồng ty phát triển phần mềm Ba con sâu có nhu cầu quản lý các nhân viên gồm:
+Programmer, Designer. Thông tin cơ bản các nhân viên đều có: 
++ mã nhân viên
++ tên nhân viên
++ ngày tháng năm sinh
++ địa chỉ
++ hệ số lương
++ lương cơ bản
+Lương của nhân viên được tính như sau:
++ Programmer: lương cơ bản * tiền overtime
++ Designer: lương cơ bản * bonus (tiền thưởng thêm)
+
+Định dạng trong file nhanVien.txt như sau:
++ dòng đầu tiên chứa số lượng nhân viên trong công ty
++ các dòng tiếp theo mỗi dòng là thông tin của từng nhân viên
+
+3
+P110, Nguyen Van An, 12/4/1993, 12 Quoc Lo 1A Binh Tan Ho Chi Minh, 8.56, 8000000, 200000
+D31p, Hoang Nhan Van, 2/10/1980, 72 Binh Thanh Ho Chi Minh, 3.45, 4000500, 1200000
+P240, Nguyen Tien Luat, 16/6/1990, 134 Dong Nai, 8.56, 17310000, 600000
+
+Yêu cầu:
+1. Đọc file dữ liệu nhanVien.txt
+2. thống kê lương nhân viên giảm dần ra tập tin thongKeLuong.txt
+3. sắp xếp nhân viên tăng dần theo năm sinh ra tập tin namSinhTangDan.txt
