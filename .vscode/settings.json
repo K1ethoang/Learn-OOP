@@ -64,7 +64,19 @@
     "new": "cpp",
     "ranges": "cpp",
     "stdexcept": "cpp",
-    "typeinfo": "cpp"
+    "typeinfo": "cpp",
+    "any": "cpp",
+    "forward_list": "cpp",
+    "unordered_set": "cpp",
+    "fstream": "cpp",
+    "future": "cpp",
+    "shared_mutex": "cpp",
+    "sstream": "cpp",
+    "stop_token": "cpp",
+    "thread": "cpp",
+    "regex": "cpp",
+    "valarray": "cpp",
+    "variant": "cpp"
   },
   "C_Cpp.errorSquiggles": "Enabled",
   "C_Cpp.intelliSenseEngineFallback": "Disabled"
