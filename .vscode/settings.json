@@ -1,22 +1,5 @@
 {
-  "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#303f67",
-    "activityBar.activeBorder": "#000000",
-    "activityBar.background": "#303f67",
-    "activityBarBadge.background": "#000000",
-    "activityBarBadge.foreground": "#e7e7e7",
-    "sash.hoverBorder": "#303f67",
-    "statusBar.background": "#202a44",
-    "statusBarItem.hoverBackground": "#303f67",
-    "statusBarItem.remoteBackground": "#202a44",
-    "titleBar.activeBackground": "#202a44",
-    "titleBar.inactiveBackground": "#202a4499",
-    "statusBar.border": "#202a44",
-    "statusBar.debuggingBackground": "#443a20",
-    "statusBar.debuggingBorder": "#443a20",
-    "tab.activeBorder": "#303f67",
-    "titleBar.border": "#202a44"
-  },
-  "peacock.color": "#202A44",
-  "editor.defaultFormatter": "ms-vscode.cpptools"
+    "files.associations": {
+        "iosfwd": "cpp"
+    }
 }
