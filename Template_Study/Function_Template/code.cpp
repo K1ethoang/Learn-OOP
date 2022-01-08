@@ -1,7 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-// ! Function Template
 // cùng kiểu dữ liệu
 template <class T>
 void swap_(T &a, T &b)
@@ -20,49 +19,24 @@ void _swap(T &a, X &b)
     b = (X)temp;
 }
 
-// ! Class Template
-template <class Type>
-class Point
-{
-private:
-    Type x;
-    Type y;
-
-public:
-    Point()
-    {
-        this->x = 0;
-        this->y = 0;
-    }
-
-    Point(const Type &x_, const Type &y_)
-        : x(x_), y(y_) {}
-
-    friend istream &operator>>(istream &is, Point &p)
-    {
-        cout << "\nNhap toa do x: ";
-        is >> p.x;
-        cout << "\nNhap toa do y: ";
-        is >> p.y;
-        return is;
-    }
-
-    friend ostream &operator<<(ostream &os, Point p)
-    {
-        os << "(" << p.x << ", " << p.y << ")";
-        return os;
-    }
-};
-
 int main()
 {
-    Point<double> point;
-    cin >> point;
-    cout << point;
-    cout << "\n\n\t\tswap" << endl;
+    /* Run code first */
+    float x = 5.3, y = 3.5;
+    int z = 6;
+    cout << "x = 5.3 (float), y = 3.5 (float), z = 6 (int)" << endl;
+    cout << "\n\tswap";
 
-    swap_<double>(point.x, point.y);
-    cout << point;
+    swap_(x, y);
+    cout << "\nCung kieu du lieu: "
+         << "x = " << x << " (float) "
+         << "y = " << y << " (float)" << endl;
+    swap_(x, y); // chuyển về lại như ban đầu
 
+    _swap(x, z);
+    cout << "\n2 kieu du lieu khac nhau: "
+         << "x = " << x << " (float) "
+         << "z = " << z << " (int)" << endl;
+    system("pause");
     return 0;
 }
