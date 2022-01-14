@@ -73,11 +73,13 @@ void menu(Employee *employees[], int &n)
         case 1:
         {
             fileIn >> n;
+            cout << fileIn.tellg() << endl;
             Employee *employee = NULL;
             for (int i = 0; i < n; i++)
             {
                 char classify; // lấy kí tự đầu để phân loại nhân viên
                 fileIn >> classify;
+                cout << fileIn.tellg() << endl;
                 fileIn.seekg(-1, ios::cur); // đưa con trỏ chỉ vị về đầu dòng
                 if (classify == 'P')
                 {
