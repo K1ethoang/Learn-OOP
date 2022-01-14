@@ -44,6 +44,7 @@ public:
     void editCandidate();
     void sortByMark();
     void searchCandidateHaveMarkOver15();
+    bool existID(const string &ID);
 };
 
 List::List()
@@ -286,4 +287,16 @@ void List::searchCandidateHaveMarkOver15()
 
     if (!check)
         cout << "\n\n\t\tKhong co thi sinh nao";
+}
+
+bool List::existID(const string &ID)
+{
+    for (Node *t = pHead; t != NULL; t = t->pNext)
+    {
+        if (t->data.getIdentifyCard().compare(ID) == 0)
+        {
+            return true;
+        }
+    }
+    return false;
 }

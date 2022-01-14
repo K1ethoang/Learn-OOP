@@ -54,6 +54,23 @@ void menu(List &l)
             Candidate c;
             cout << "\n\t\tNhap thong tin thi sinh\n";
             cin >> c;
+            while (l.existID(c.getIdentifyCard()))
+            {
+                string ID;
+
+                cout << "\n\t(!) Da co thi sinh voi CMND nay, nhap lai: ";
+                cin >> ID;
+                c.setIdentifyCard(ID);
+                if (!c.validId(ID))
+                {
+                    do
+                    {
+                        cout << "\n\t(!) CMND khong hop le, Nhap lai: ";
+                        cin >> ID;
+                        c.setIdentifyCard(ID);
+                    } while (!c.validId(ID));
+                }
+            }
             l.push(c);
             system("pause");
             break;

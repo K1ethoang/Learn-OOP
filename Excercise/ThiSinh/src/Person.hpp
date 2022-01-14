@@ -43,6 +43,15 @@ int Person::getAge()
     return this->age;
 }
 
+bool checkAge(const int &age) // hàm ngoài
+{
+    if (age > 0)
+    {
+        return true;
+    }
+    return false;
+}
+
 void Person::toStream(istream &input)
 {
     fflush(stdin);
@@ -52,6 +61,14 @@ void Person::toStream(istream &input)
     getline(input, this->homeTown);
     cout << "\nNhap tuoi: ";
     input >> this->age;
+    do
+    {
+        if (!checkAge(this->age))
+        {
+            cout << "\n\t(!) Tuoi khong hop le, nhap lai: ";
+            cin >> this->age;
+        }
+    } while (!checkAge(this->age));
 }
 
 istream &operator>>(istream &input, Person &person)
