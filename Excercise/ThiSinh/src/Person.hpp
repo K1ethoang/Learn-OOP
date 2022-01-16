@@ -16,8 +16,7 @@ public:
     string getFullname();
     string getHomeTown();
     int getAge();
-    virtual void toStream(istream &input);
-    void read(istream &input);
+    virtual void toStream(istream &input); // vừa nhập từ bàn phìm - vừa từ file
     friend istream &operator>>(istream &input, Person &person);
 };
 
