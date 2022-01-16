@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Candidate.hpp"
+#include <vector>
 #include <fstream>
 
 class Node
@@ -39,11 +40,12 @@ public:
     void setTail(Node *pNew);
     void setSize(int newSize);
     void display();
-    void push(Candidate val);
-    void deleteByID(string ID);
+    void push(const Candidate &val);
+    void deleteByID(const string &ID);
     void editCandidate();
     void sortByMark();
-    void searchCandidateHaveMarkOver15();
+    void displayCandidateHasMarkOver(float mark);
+    vector<Candidate> searchCandidateByMark(float mark);
     bool existID(const string &ID);
 };
 
@@ -103,6 +105,7 @@ void List::display()
     else
     {
         int i = 1;
+
         for (Node *t = pHead; t != NULL; t = t->pNext)
         {
             cout << "\n\n\t\tThi sinh " << i++ << endl;
@@ -112,7 +115,7 @@ void List::display()
     cout << "\n\n\tSo thi sinh hien co: " << size;
 }
 
-void List::push(Candidate val) // thêm vào cuối
+void List::push(const Candidate &val) // thêm vào cuối
 {
     bool check = false;
     Node *p = new Node(val);
@@ -179,7 +182,7 @@ void List::delTail() // hàm phụ: xoá node cuối
     }
 }
 
-void List::deleteByID(string ID) // xoá theo số báo danh
+void List::deleteByID(const string &ID) // xoá theo số báo danh
 {
     bool check = false;
     if (pHead == NULL)
@@ -271,21 +274,32 @@ void List::sortByMark() // tăng dần
     }
 }
 
-void List::searchCandidateHaveMarkOver15()
+vector<Candidate> List::searchCandidateByMark(float mark)
 {
-    int i = 1;
-    bool check = false;
+    vector<Candidate> candidates;
     for (Node *t = pHead; t != NULL; t = t->pNext)
     {
-        if (t->data.sumOfMark() > 15)
+        if (t->data.sumOfMark() > mark)
         {
-            cout << "\n\n\t\tThi sinh thu " << i++ << endl;
-            cout << t->data;
-            check = true;
+            candidates.push_back(t->data);
         }
     }
+    return candidates;
+}
 
-    if (!check)
+void List::displayCandidateHasMarkOver(float mark)
+{
+    int i = 1;
+    vector<Candidate> candidates = searchCandidateByMark(mark);
+    if (candidates.size() > 0)
+    {
+        for (const Candidate candidate : candidates)
+        {
+            cout << "\n\n\t\tThi sinh thu " << i++ << endl;
+            cout << candidate;
+        }
+    }
+    else
         cout << "\n\n\t\tKhong co thi sinh nao";
 }
 
