@@ -6,6 +6,7 @@ int main()
 {
     List l;
     menu(l);
+
     return 0;
 }
 
@@ -37,6 +38,7 @@ void menu(List &l)
         cout << "\t3. Xoa thi sinh" << endl;
         cout << "\t4. Chinh sua thi sinh" << endl;
         cout << "\t5. Thi sinh co tong diem 3 mon lon hon 15" << endl;
+        cout << "\t6. Luu danh sach" << endl;
         cout << "\t0. Thoat chuong trinh" << endl;
         cout << "---------------------------------------------------------------";
 
@@ -92,7 +94,13 @@ void menu(List &l)
         }
         case 5:
         {
-            l.searchCandidateHaveMarkOver15();
+            l.displayCandidateHasMarkOver(15);
+            system("pause");
+            break;
+        }
+        case 6:
+        {
+
             system("pause");
             break;
         }
