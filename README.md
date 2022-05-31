@@ -12,6 +12,15 @@
 # 1. Các tính chất của OOP
 ## 1.1. Tính đóng gói (Encapsulation)
 
+<details>
+<summary> Khái niệm <summary>
+
+- Tính đóng gói cho phép che giấu thông tin và những tính chất xử lý bên trong của đối tượng. Các đối tượng khác không thể tác động trực tiếp đến dữ liệu bên trong và làm thay đổi trạng thái của đối tượng mà bắt buộc phải thông qua các phương thức công khai do đối tượng đó cung cấp.
+
+- Tính chất này giúp tăng tính bảo mật cho đối tượng và tránh tình trạng dữ liệu bị hư hỏng ngoài ý muốn.
+
+</details>
+
 - access modifier:
     + **private**: Thành phần có thuộc tính này sẽ chỉ được truy cập từ bên trong lớp cơ sở.
 Bên ngoài lớp hay trong lớp dẫn xuất sẽ không thể truy cập được.
@@ -49,7 +58,37 @@ public:
 
 ## 1.2. Tính trừu tượng (Abstraction)
 
+<details>
+<summary> Khái niệm </summary>
+
+- Tính trừu tượng giúp loại bỏ những thứ phức tạp, không cần thiết của đối tượng và chỉ tập trung vào những gì cốt lõi, quan trọng.
+- Ví dụ: 
+  - Quản lý nhân viên thì chỉ cần quan tâm đến những thông tin như:
+    - Họ tên
+    - Ngày sinh
+    - Giới tính
+    - …
+  - Chứ không cần phải quản lý thêm thông tin về:
+    - Chiều cao
+    - Cân nặng
+    - Sở thích
+    - Màu da
+    - …
+
+</details>
+
 ## 1.3. Tính kế thừa (Inheritance)
+
+<details>
+<summary> Khái niệm </summary>
+
+- Đây là tính chất được sử dụng khá nhiều. Tính kế thừa cho phép xây dựng một lớp mới (lớp Con), kế thừa và tái sử dụng các thuộc tính, phương thức dựa trên lớp cũ (lớp Cha) đã có trước đó.
+- Các lớp Con kế thừa toàn bộ thành phần của lớp Cha và không cần phải định nghĩa lại. Lớp Con có thể mở rộng các thành phần kế thừa hoặc bổ sung những thành phần mới.
+- Ví dụ:
+  - Lớp Cha là smartphone, có các thuộc tính: màu sắc, bộ nhớ, hệ điều hành…
+  - Các lớp Con là iPhone, Samsung, Oppo cũng có các thuộc tính: màu sắc, bộ nhớ, hệ điều hành…
+
+</details>
 
 <details>
 <summary> Cú pháp </summary>
@@ -78,6 +117,17 @@ class child : public parent
 
 
 ## 1.4. Tính đa hình (Polymorphism)
+
+<details>
+<summary> Khái niệm </summary>
+
+- Tính đa hình trong lập trình OOP cho phép các đối tượng khác nhau thực thi chức năng giống nhau theo những cách khác nhau.
+- Ví dụ:
+  - Ở lớp smartphone, mỗi một dòng máy đều kế thừa các thành phần của lớp cha nhưng iPhone chạy trên hệ điều hành iOS, còn Samsung lại chạy trên hệ điều hành Android.
+  - Chó và mèo cùng nghe mệnh lệnh “kêu đi” từ người chủ. Chó sẽ “gâu gâu” còn mèo lại kêu “meo meo”.
+
+</details>
+
 - Từ khoá **`virtual`**: gọi đến những hàm được **overriding** ở lớp dẫn xuất
 - **Overriding** (ghi đè): định nghĩa lại 1 phương thức ở lớp cơ sở
 - **Overloading** (nạp chồng): các phương thức có tên giồng nhau nhưng khác số lượng tham số hoặc kiểu dữ liệu tham số
@@ -167,5 +217,5 @@ TUỲ CƠ ỨNG BIẾN
 - Dùng this là để chương trình hiểu là ta đang gọi đến member của object chứ không phải là biến thamn số của hàm:
     - Nếu biến đó không tôn tại trong phương thức mà nó lại trùng với tên thuộc tính thì mặc nhiên nó sẽ hiểu đó là thuộc tính.
     - Nếu biến đó có khai báo trong phương thức thì ta sẽ hiểu đó là biến bình thường, không phải là thuộc tính.
-    - 
+
 </details>
