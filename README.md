@@ -6,6 +6,8 @@
     - [1.4.1. Phương thức ảo (virtual)](#141-phương-thức-ảo-virtual)
     - [1.4.2. Phương thức thuần ảo (Pure Virtual)](#142-phương-thức-thuần-ảo-pure-virtual)
     - [1.4.3. Khi nào dùng phương thức ảo - thuần ảo](#143-khi-nào-dùng-phương-thức-ảo---thuần-ảo)
+- [2. Bonus](#2-bonus)
+  - [2.1. this keyword](#21-this-keyword)
 
 # 1. Các tính chất của OOP
 ## 1.1. Tính đóng gói (Encapsulation)
@@ -155,3 +157,15 @@ virtual void calculate() = 0; // phương thức thuần ảo
 TUỲ CƠ ỨNG BIẾN
 
 `" BIẾN CÁI PHƯƠNG THỨC THUẦN ẢO -> PHƯƠNG THỨC ẢO "`
+
+# 2. Bonus
+
+## 2.1. this keyword
+<details>
+<summary> Open </summary>
+
+- Dùng this là để chương trình hiểu là ta đang gọi đến member của object chứ không phải là biến thamn số của hàm:
+    - Nếu biến đó không tôn tại trong phương thức mà nó lại trùng với tên thuộc tính thì mặc nhiên nó sẽ hiểu đó là thuộc tính.
+    - Nếu biến đó có khai báo trong phương thức thì ta sẽ hiểu đó là biến bình thường, không phải là thuộc tính.
+    - 
+</details>
