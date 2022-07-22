@@ -205,7 +205,7 @@ virtual void calculate() = 0; // phương thức thuần ảo
 </details>
 TUỲ CƠ ỨNG BIẾN
 
-`" BIẾN CÁI PHƯƠNG THỨC THUẦN ẢO -> PHƯƠNG THỨC ẢO "`
+`"BIẾN CÁI PHƯƠNG THỨC THUẦN ẢO -> PHƯƠNG THỨC ẢO"`
 
 # 2. Bonus
 
