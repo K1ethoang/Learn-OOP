@@ -223,3 +223,5 @@ TUỲ CƠ ỨNG BIẾN
 ## 2.2. Tài liệu
 
 - [Tổng quan Lập trình hướng đối tượng qua ví dụ cụ thể](https://viblo.asia/p/tong-quan-lap-trinh-huong-doi-tuong-qua-vi-du-cu-the-4dbZNRBLZYM)
+
+- [Tránh hiểu sai về Abstraction trong OOP](https://viblo.asia/p/tranh-hieu-sai-ve-abstraction-trong-oop-RnB5pJb6ZPG)
